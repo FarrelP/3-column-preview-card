@@ -1,0 +1,128 @@
+body {
+    background: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.d-mobile {
+    display: none;
+}
+
+.section-card {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+}
+
+.page-center {
+    margin: auto;
+}
+
+.card-placeholder {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50rem;
+}
+
+.cp-info {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    height: 25rem;
+}
+
+.sedan {
+    background: #E38826;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.suv {
+    background: #006970;
+}
+
+.luxury {
+    background: #004241;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.car-type {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+    margin: 1rem 0;
+}
+
+.car-desc {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #f2f2f2;
+}
+
+.cta {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background: hsla(0, 0%, 100%, 0.75);
+    border: none;
+    border-radius: 30px;
+    padding: 0.75rem;
+    width: 70%;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background: hsla(0, 0%, 100%, 0.25);
+    border: 2px #ffffff solid;
+    color: #ffffff;
+}
+
+.cta:active {
+    background: transparent;
+    border: 2px #ffffff solid;
+    color: #ffffff;
+}
+
+.cta-sedan {
+    color: #e28525;
+}
+
+.cta-suv {
+    color: #016972;
+}
+
+.cta-luxury {
+    color: #00403f;
+}
+
+@media screen and (max-width: 769px) {
+    body {
+        overflow: auto;
+        height: auto;
+    }
+
+    .card-placeholder {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cp-info {
+        height: 18rem;
+    }
+
+    .sedan {
+        border-radius: unset;
+    }
+    
+    .luxury {
+        border-radius: unset;
+    }
+}
